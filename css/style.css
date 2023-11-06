@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@100;300;400;700;900&family=Lexend+Deca:wght@300&family=Poppins:wght@300;500;700&display=swap');
+body{
+    background-color: rgb(93, 186, 222);
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+#sun{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: rgb(255, 98, 0);
+    margin-left: 364px;
+    margin-top: 0px;
+}
+
+body{
+    background-color:#66D0FF;
+  }
+  .cloud{ 
+     margin-top:0px;
+     margin-left: 100px;
+     width:350px;
+     height:120px;
+     background:#ECEFF1;
+     box-shadow: 10px 10px rgba(0,0,0,0.2);
+     border-radius:100px;
+  }
+  .cloud::after, .cloud::before{
+      content:"";
+      position:relative;
+      display:inline-block;
+      background:inherit;
+      border-radius:inherit;
+  }
+  .cloud::after{
+      width:100px;
+      height:100px;
+      top:-126px;
+      left:-126px;
+  }
+  .cloud::before{
+      width:180px;
+      height:180px;
+      top: -70px;
+      left:140px;
+  }
+
+  
+.tree {
+      margin: 0px;
+      height: 270px;
+      width: 320px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .tree-details .trunk {
+        border-color: brown transparent;
+        border-style: solid;
+        border-width: 0 15px 200px;
+        bottom: 0;
+        left: 43%;
+        height: 0px;
+        position: absolute;
+        width: 0;
+    }
+    
+    .tree-details .branches {
+        border-color: rgb(17, 147, 17) transparent;
+        border-style: solid;
+        height: 0px;
+        position: absolute;
+        width: 0;
+        border-width: 0 100px 120px;
+        left: 17%;
+        animation: sway 3s infinite alternate ease-in-out;
+    }
+    @keyframes sway {
+      0% {
+        transform: rotateZ(-5deg);
+      }
+
+      50%{
+        transform: rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateZ(5deg);
+      }
+    }
+    
+    .tree-details .bottom {
+      bottom: 30px;
+      border-bottom-left-radius: 50% 20px;
+      border-bottom-right-radius: 50% 20px;
+    
+    }
+    
+    .tree-details .middle {
+      bottom: 80px;
+      border-bottom-left-radius: 50% 60px;
+      border-bottom-right-radius: 50% 60px;
+    
+    }
+    
+    .tree-details .top {
+      bottom: 130px;
+      border-bottom-left-radius: 50% 100px;
+      border-bottom-right-radius: 50% 100px;
+    
+    }
+    
+
+    #line{
+        height: 1px;
+        width: 100%;
+        margin-top: -8px;
+        background-color: rgb(57, 57, 57);
+        border-style: solid;
+        border-width: 0px;
+    }
+
+    /* airplane styling */
+    .airplaneAnimation{
+      position: absolute;
+        transition: transform 8s ease-in-out;
+    }
+
+      .airplaneAnimation:hover{
+      transform: translate(calc(100vw + 100%), calc(-40vh - 100%));
+    }
+
+
+
+    .plane {
+      /* position: relative; */
+      left:0;
+      top:7px;
+      animation: fly 2s linear infinite;
+      transform: scale(1.2);
+    }
+    
+    .main {
+      position: absolute;
+      width: 264px;
+      height: 48px;
+      background-color: #b8575b;
+      top:120px;
+      left:120px;
+      border-radius: 0 120px 36px 120px;
+      overflow:hidden;
+      box-shadow: inset -12px -12px rgba(0,0,0,0.2);
+      z-index:2;
+    }
+    
+    .main:before, .main:after {
+      content:"";
+      position: absolute;
+      background-color: #fdc921;
+      top:12px;
+    }
+    
+    .main:before {
+      width:48px;
+      height:12px;
+      border-radius: 0 0 0 36px;
+      left: 228px;
+    }
+
+    .main:after {
+      width: 6px;
+      height: 12px;
+      border-radius:24px;
+      left:192px;
+      box-shadow: -24px 0 #fdc921, -48px 0 #fdc921,  -72px 0 #fdc921,  -96px 0 #fdc921, -120px 0 #fdc921, -144px 0 #fdc921;
+    }
+    
+    .wingOne {
+      position: absolute;
+      width:24px;
+      border-right: 24px solid transparent;
+      border-left: 24px solid transparent;
+      border-top: 96px solid #b8575b;
+      height:0;
+      top:138px;
+      left:192px;
+      transform: skew(-45deg) rotateX(30deg);
+      z-index:4;
+    }
+    
+    .wingTwo {
+      position: absolute;
+      width:24px;
+      border-right: 24px solid transparent;
+      border-left: 24px solid transparent;
+      border-bottom: 96px solid #8d262a;
+      height:0;
+      top:66px;
+      left:192px;
+      transform: skew(45deg) rotateX(30deg);
+    }
+    
+    .wingTwo:after {
+      content:"";
+      position: absolute; 
+      width:24px;
+      border-right: 18px solid transparent;
+      border-left: 18px solid transparent;
+      border-bottom: 42px solid #b8575b;
+      height:0;
+      left:-120px;
+      top:34px;
+    }
+    
+    .wingOne:after {
+      content:"";
+      position: absolute; 
+      width:24px;
+      height:30px;
+      background-color: #b8575b;
+      top:-126px;
+      left:-168px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    
+    .wingTwo:before {
+      content:"";
+      position: absolute; 
+      width:24px;
+      height:30px;
+      background-color: #8d262a;
+      left:-96px;
+      top:42px;
+      transform: skew(-55deg);
+    }
+
+
+    .image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: transform 10s ease-in-out;
+    }
+
+    #take-off-track{
+        height:250px;
+        width:100%;
+        margin-top: 0px;
+        background-color: rgb(75, 75, 75);
+        border-width: 0px;
+        border-style: solid;
+    }
+
+    #white-marking{
+        height:18px;
+        width:100%;
+        margin-top: -133px;
+        background-color: white;
+    }
+
+    #tagline{
+      font-size: 60px;
+      text-align: center;
+      color: #000000;
+      margin-top: 130px;
+    }
+
+
